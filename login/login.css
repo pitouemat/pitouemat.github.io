@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    
+}
+header{
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    margin-bottom: .8rem;
+    
+}
+
+
+.login{
+    
+    max-width: 350px;
+    height: 70vh;
+
+    padding: 2rem;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: #000 0px 0 10px;
+    transition-property:box-shadow;
+    transition-duration:.3s ;
+}
+.login:hover{
+    box-shadow: none;
+}
+form{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.input-conteiner > input{
+    width: 70%;
+    height: 80%;
+    transition-property: width;
+    transition-duration: .5s;
+    margin-top: .5rem;
+}
+.input-conteiner > input:hover{
+    width: 100%;
+}
+form input[type="button"]{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    padding: 0.5rem;
+    background: linear-gradient(to left, #000308, #180b2e);
+    color: #FFF;
+    cursor: pointer;
+    font-size: .8rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: flex;
+    
+    align-items: center;
+    width: 100%;
+    transition-property: background;
+    transition-duration: 1s;
+    
+}
+form input[type="button"]:hover{
+    background: rgb(88, 49, 158);
+    
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: .5rem;
+    
+}
+
+.footer span{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.footer .social-field{
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    
+   
+   
+
+}
+.footer .social-field a {
+    text-decoration: none;
+    color: white;
+}
+.footer .social-field a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.footer > .social-field > .gmail-field{
+    background: rgb(216, 77, 77);
+    margin-bottom: .5rem;
+    transition-property: background;
+    transition-duration: .5s;
+    padding: 5px 5px;
+  
+
+}
+.footer > .social-field > .gmail-field:hover{
+    background: rgb(158, 59, 59);
+    
+    
+  
+
+}
+
+.footer > .social-field > .facebook-field{
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    transition-property: background;
+    transition-duration: .5s;
+    padding: 5px 5px;
+}
+
+.footer > .social-field > .facebook-field:hover{
+    background: linear-gradient(to right, #11213f, #366bc5);
+    
+}
+
+.text > a>  h5{
+    margin-top: 30%;
+    margin-left: 50%;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.text > a>  h5:hover{
+    
+    background: #8e2de2;
+    color: #FFF;
+}
