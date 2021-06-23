@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroovIt</title>
+    <link rel="stylesheet" href="css/album.css">
+    <link rel="icon" type="imagem/png" href="imgs/GroovIt.png" />
+
+    <script src="https://kit.fontawesome.com/669bcf34d7.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+
+    <div class="sidebar">
+        <div class="sidebar-wraper">
+            <div class="sidebar_logo">
+                <img src="imgs/GroovIt.png" alt="" srcset="">
+            </div>
+
+            <div class="sidebar_menu">
+                <a href="player.html" class="select"> <i class="fas fa-home"></i> Inicío</a>
+                <a href="#"> <i class="fas fa-search"></i> Buscar</a>
+                <a href="#"> <i class="fas fa-database"></i> Biblioteca</a>
+            </div>
+            <div class="sidebar_menu">
+                <p class="sidebar_menu_tittle">
+                    Playlist
+                </p>
+
+                <div class="sidebar_menu_item">
+                    <div class="sidebar_menu_componente">
+                        +
+                    </div>
+                    <span>Criar Playlist</span>
+                </div>
+
+                <div class="sidebar_menu_item">
+                    <img src="assets/heart.png" alt="" srcset="">
+                    <span> Curtidas</span>
+                </div>
+            </div>
+            <div class="sidebar_playlist">
+                <a href="">PlayList 1</a>
+                <a href="">PlayList 1</a>
+                <a href="">PlayList 1</a>
+                <a href="">PlayList 1</a>
+                <a href="">PlayList 1</a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="main">
+
+        <div class="main_row">
+            <div class="fa-2x">
+                <i class="fas fa-arrow-circle-left"></i>
+                <i class="fas fa-arrow-circle-right"></i>
+            </div>
+            <!--fa-2x-->
+            <input type="search" name="" id="">
+
+        </div>
+        <!--main_row-->
+
+        <div class="main_row_tittle">
+            <h6>Última Pesquisa...</h6>
+            <h2>Let it Be</h2>
+        </div>
+        <!--main_row_tittle-->
+
+        <div class="main_card" id="main_card">
+            <img src="imgs/beatle.jpg" width="100px" height="100px" alt="" style="box-shadow: #000 0 0 5px;">
+            <h2>Let it Be</h2>
+            <p> Album de The Beatles</p>
+
+            <audio id="audioLet">
+                <source src="assets/let.mp3">
+            </audio>
+
+
+        </div>
+        <!--main_card-->
+
+        <span style="color: #FFF; font-size: 14pt;">Músicas</span>
+
+
+        <div class="card_row">
+
+            <img src="imgs/beatle.jpg" width="50px" height="50px" alt="">
+            <div class="text">
+                <h3>Let it Be</h3>
+                <p> Album de The Beatles</p>
+            </div>
+
+            <audio id="audioLet">
+                <source src="assets/let.mp3">
+            </audio>
+
+
+        </div>
+        <!--card_row-->
+
+
+
+        <div class="card_row">
+
+            <img src="imgs/dont.jpg" width="50px" height="50px" alt="">
+            <div class="text">
+                <h3>Dont Let me Down</h3>
+                <p> do Album Let it Be</p>
+            </div>
+
+        </div>
+        <!--card_row-->
+
+
+    </div> <!-- main -->
+
+    <div class="player">
+        <div class="player_artist" id="player_artist">
+
+        </div>
+
+        <div class="player_control">
+            <div class="player_control_buttons">
+                <a href=""><i class="fas fa-backward"></i></a>
+                <a id="pauseBtn" href="#" style="display: none;" <i class="far fa-pause-circle"></i></a>
+                <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+                <a href=""><i class="fas fa-forward"></i></a>
+            </div>
+
+            <div class="player_control_progress">
+                <div class="player_control_progress_2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audioPlayer" controls="" style="position: absolute; top: 0; left: 0; z-index: -999; opacity: 0;" src="">
+
+
+
+    </audio>
+
+
+    <script src="js/search.js"></script>
+</body>
+
+</html>
