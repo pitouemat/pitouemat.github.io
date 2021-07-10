@@ -130,11 +130,14 @@ header{
      
      
      display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
     
-     border-bottom: 1px rgb(60,60,60) solid;
  }
  .main_cards img{
      border-radius: 10px;
+     max-width: 100%;
+     display: block;
     
  }
 
@@ -150,12 +153,23 @@ header{
 .main_cards_musics{
     margin-top: 1rem;
     display: flex;
+    
+    max-width: 1600px;
+    flex-wrap: wrap;
+
 }
 
 .card_music{
     
     cursor: pointer;
     padding: 10px;
+}
+
+.card_music img {
+    
+    box-shadow: #000 0 0 10px;
+     max-width: 100%;
+     display: block;
 }
 .card_music .autor{
     color: rgb(83, 83, 83);
@@ -234,4 +248,55 @@ header{
     height: 7px;
     border-radius: 8px;
     background-color: #FFF ;
+}
+.mobile_menu{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    color: #FFF;
+    visibility: hidden;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: rgb(38, 38, 38);
+}
+
+.mobile_menu .mobile_logo{
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+.mobile_menu input{
+    visibility: hidden;
+}
+
+.mobile_menu label{
+    cursor: pointer;
+}
+@media (max-width: 800px){
+    header{
+        visibility: hidden;
+    }
+    .main_content{
+        width: 100%;
+        margin-left: 0;
+    }
+    .mobile_menu{
+        visibility: visible;
+    }
+
+    .player{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    right: 0;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    background: #292828;
+    
+    }
+    .player_artist > h3, span{
+        visibility: hidden;
+    }
 }
