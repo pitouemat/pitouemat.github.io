@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,500;1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(13, 17, 23);
+    font-family: 'Poppins';
+    width: 100vw;
+}
+
+.content{
+    margin: auto;
+    width: 70vw;
+    height: 50vh;
+    
+   
+}
+.tittle h1{
+    
+    display: flex;
+    color: aquamarine;
+    font-family: 'Poppins';
+    justify-content: center;
+    
+}
+
+
+.tittle h1 p {
+    color: rgb(255, 255, 255);
+}
+.input_area{
+    width: 350px;
+    height: 40px;
+    background: #FFF;
+    border: 1px solid rgb(100, 99, 99);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.input_area input{
+    width: 300px;
+    height: 30px;
+    border: 0;
+    background: transparent;
+    outline: none;
+    margin-left: 10px;
+    font-family: 'Poppins';
+    border-right: 1px solid rgb(207, 195, 195);
+}
+
+.input_area label{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.content .search_resu{
+    margin-top: 3rem;
+    color: #FFF;
+    
+   
+}
+
+.search_resu .image_anime{
+    display: flex;
+   
+    
+    
+}
+.search_resu .image_anime img{
+    margin-right: 10px;
+}
+
+footer{
+    
+    color: #FFF;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    .search_resu{
+        font-size: 12px;
+    }
+    .image_anime img{
+        width: 60%;
+    }
+    .image_anime {
+        flex-wrap: wrap;
+    }
+    .input_area{
+        width: 260px;
+    }
+    .input_area input{
+        width: 210px;
+    }
+}

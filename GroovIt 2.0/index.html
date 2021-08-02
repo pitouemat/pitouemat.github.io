@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <script src="https://kit.fontawesome.com/669bcf34d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onscroll="scroll()">
+
+    <header>
+
+        <div class="sidebar_logo">
+            <i class="fas fa-music "></i>
+            <h3>GroovIt<h3>
+        </div>
+
+
+
+        <div class="sidebar_menu">
+            <div class="search">
+                <i class="fas fa-search" style="margin-right: .4rem; color: #FFF;"></i>
+                <input type="search" name="" id="" placeholder="Buscar">
+            </div>
+
+            <div class="menu_text">
+                <a href="index.html"> <i class="far fa-play-circle"></i> Ouvir agora</a>
+                <a href="buscador.html"> <i class="fas fa-cubes"></i> Explorar</a>
+                <a href=""> <i class="fas fa-microphone-alt"></i> Podcast</a>
+
+            </div>
+
+
+        </div>
+
+        <div class="footer">
+            <p>&copy;Matheus Aguiar</p>
+
+            <div class="social_field">
+                <a href="https://github.com/pitouemat"><i class="fab fa-github" style="color: #FFF;"></i></a>
+                <a href="https://www.linkedin.com/in/matheus-aguiar-2b9703212/"><i class="fab fa-linkedin"
+                        style="color: #FFF;"></i></a>
+                <a href="https://discord.gg/sdPu25ws"> <i class="fab fa-discord" style="color: #FFF;"></i></a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="mobile_menu">
+
+        <div class="mobile_logo">
+            <i class="fas fa-music "></i>
+            <h3>GroovIt</h3>
+
+        </div>
+
+
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox"><i class="fas fa-bars"></i></label>
+
+    </div>
+
+
+
+    <div class="player">
+        <div class="player_artist" id="player_artist">
+
+        </div>
+
+        <div class="player_control">
+            <div class="player_control_buttons">
+                <a href=""><i class="fas fa-backward"></i></a>
+                <a id="pauseBtn" href="#" style="display: none;" <i class="far fa-pause-circle"></i></a>
+                <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+                <a href=""><i class="fas fa-forward"></i></a>
+            </div>
+
+            <div class="player_control_progress">
+                <div class="player_control_progress_2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="main_content">
+        <h1 id="day"></h1>
+
+
+        <div class="main_cards">
+            <div class="card">
+                <p style="color: rgb(83, 83, 83)">Albuns Famosos</p>
+                <h3>Queen Works</h3>
+                <h4 style="color: rgb(82, 80, 80)">Quenn</h4>
+
+                <img src="img/queen.jpg" alt="" width="400" height="225">
+
+            </div>
+
+
+            <div class="card">
+                <p style="color: rgb(83, 83, 83)">Albuns Famosos</p>
+                <h3>Let it be</h3>
+                <h4 style="color: rgb(82, 80, 80)">The Beatles</h4>
+
+                <img src="img/let it be.jpg" alt="" width="400" height="225">
+            </div>
+        </div>
+        <h3 style=" border-top: 1px rgb(60,60,60) solid;">Múscias especiais</h3>
+        <div class="main_cards_musics">
+
+
+            <div class="card_music" id="card" data-image="img/bohemian.jpg" data-artist="Queen" data-song="Bohemian"
+                data-file="assets/bohemian.mp3">
+                <img src="img/bohemian.jpg" alt="" width="180" height="180">
+                <p>Bohemian Rhapsody</p>
+                <p class="autor">Queen</p>
+            </div>
+
+            <div class="card_music" id="card" data-image="img/beatle.jpg" data-artist="The Beatles"
+                data-song="Let it Be" data-file="assets/let.mp3">
+                <img src="img/beatle.jpg" alt="" width="180" height="180">
+                <p>Let it Be</p>
+                <p class="autor">The Beatles</p>
+            </div>
+            <div class="card_music" id="card" data-image="img/imagine.jpg" data-artist="John Lennon" data-song="Imagine"
+                data-file="assets/imagine.mp3">
+                <img src="img/imagine.jpg" alt="" width="180" height="180">
+                <p>imagine</p>
+                <p class="autor">Jonh Lennon</p>
+            </div>
+
+            <div class="card_music" data-image="img/killer.jpg" data-artist="Queen" data-song="Killer Queen"
+                data-file="assets/kq.mp3">
+                <img src="img/killer.jpg" alt="" width="180" height="180">
+                <p>Killer Queen</p>
+                <p class="autor">Queen</p>
+            </div>
+
+            <div class="card_music" data-image="img/bi.jpg" data-artist="Michael Jackson" data-song="Smooth Criminal"
+                data-file="assets/smooth.mp3">
+                <img src="img/bi.png" alt="" width="180" height="180">
+                <p>Smooth Criminal</p>
+                <p class="autor">Michael Jackson</p>
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <audio id="audioPlayer" controls="" style="position: absolute; top: 0; left: 0; z-index: -999; opacity: 0;">
+
+    </audio>
+    <script src="js/app.js"></script>
+    <script src="js/tocarMusic.js"></script>
+</body>
+
+</html>
