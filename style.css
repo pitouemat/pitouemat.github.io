@@ -53,6 +53,7 @@ header h1{
     background-color: #DFDFDF;
     border-radius: 8px;
     margin-bottom: 10px;
+    box-shadow: black 0 0 5px;
 }
 
 .links .card .header_card{
