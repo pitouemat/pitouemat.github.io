@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,500;1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    min-height: 80vh;
+    
+    background: rgb(13, 17, 23);
+}
+.input_area{
+width: 350px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(100, 99, 99);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.title, .title a{
+    margin-top: 100px;
+    color: aliceblue;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.title a i:hover{
+    color: rgb(207, 207, 207);
+    cursor: pointer;
+
+}
+.input_area input{
+    width: 300px;
+    height: 30px;
+    border: 0;
+    background: transparent;
+    outline: none;
+    margin-left: 10px;
+    font-family: 'Poppins';
+    border-right: 1px solid rgb(207, 195, 195);
+}
+
+.input_area label{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.ul_area{
+    margin: auto;
+    
+    color: aliceblue;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    flex-wrap: wrap;
+}
+
+.ul_area ul li a{
+    text-decoration: none;
+    color: rgb(200, 202, 204);
+    
+}
+.ul_area ul li a:hover{
+    color: azure;
+}
+
+footer{
+    font-family: 'Poppins';
+    color: aliceblue;
+    text-align: center;
+}
