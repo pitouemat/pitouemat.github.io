@@ -1,6 +1,18 @@
 let audioPlayer = document.getElementById('audioPlayer');
 let playBtn = document.getElementById('playBtn');
 let pauseBtn = document.getElementById('pauseBtn');
+let progressBar = document.getElementById('progressBar');
+
+// Atualiza a barra de progresso enquanto a música toca
+audioPlayer.addEventListener('timeupdate', () => {
+    progressBar.max = audioPlayer.duration;
+    progressBar.value = audioPlayer.currentTime;
+});
+
+// Permite que o usuário mude o tempo da música arrastando a barra
+progressBar.addEventListener('input', () => {
+    audioPlayer.currentTime = progressBar.value;
+});
 
 document.getElementById('pauseBtn').addEventListener('click', (e) => {
     e.preventDefault();
